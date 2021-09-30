@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	line-height: 30%;
+	margin-top: 5%;
+}
+
+
+
+
+
+.container1{
+	display:flex;
+	justify-content: space-around;
+	margin-top: 5%;
+	margin-left: 8%;
+	
+}
+
+.container2{
+	display:flex;
+	justify-content: space-around;
+	margin-top: 5%;
+	
+}
+
+
+
+#box1{
+  display:block;
+  width:300px;
+  height:300px;
+  animation: bgchange1 2.5s ease infinite ;
+ 
+}
+@keyframes bgchange1{
+  
+  0%{
+	background: #FE9DD8;
+	}
+  25% {
+    background: #FD71B2;
+  }
+  50% {
+    background: #FBA8B4;
+  }
+  75%{
+	background: #FD71B2;
+  }
+  100%{
+	background: #FE9DD8;
+	}
+ 
+}
+
+#box2{
+  display:block;
+  width:300px;
+  height:300px;
+  animation: bgchange2 2.5s ease infinite;
+}
+@keyframes bgchange2{
+  0% {
+    background:#FE9DD8;
+  }
+  25% {
+    background: #D27FC2;
+  }
+  50% {
+    background: #A4C1D3;
+  }
+  75% {
+    background: #D27FC2;
+  }
+  100% {
+    background:#FE9DD8;
+  }
+}
+
+#box3{
+  display:block;
+  width:300px;
+  height:300px;
+  animation: bgchange3 2.5s ease infinite;
+}
+@keyframes bgchange3{
+  0% {
+    background:#FE9DD8;
+  }
+  25% {
+    background: #E786C3;
+  }
+  50% {
+    background: #CDD1D3;
+  }
+  75% {
+    background: #E786C3;
+  }
+  100% {
+    background:#FE9DD8;
+  }
+}
+
+ button {
+	 margin-top: 40px;
+	 margin-left: 50%;
+        }
+       
+
+        .popup{
+          display: none;
+        }
+        .popup-show{
+          display: flex;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          width: 100%;
+          height: 100%;
+          z-index: 100;
+          color: #fff;
+          justify-content: center;
+    align-items: center;
+
+        }
+.checkbox {
+  display: block;
+  position: relative;
+  margin: 1em 0;
+  padding-left: 28px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  user-select: none; /* テキストが選択されてしまうのを防ぐ */
+  /* inputは非表示にする */
+  input {
+    display: none;
+  }
+}
+
+/* □ */
+.checkmark {
+  position: absolute;
+  top: 0; /* 上からの位置 */
+  left: 0;
+  height: 22px; /* 幅 */
+  width: 22px; /* 幅 */
+  border: solid 2px #d4dae2; /* 線 */
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* ✓ */
+  &:after {
+    content: "";
+    position: absolute;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    transform: rotate(45deg);
+    opacity: 0; /* 透明にしておく */
+  }
+}
+
+
+
+/* チェックが入ったとき */
+.checkbox {
+  /* □ */
+  input:checked + .checkmark {
+    background: #2e80ff; /* チェック時の色 */
+    border-color: #2e80ff; /* チェック時の色 */
+  }
+  /* ✓ */
+  input:checked + .checkmark:after {
+    opacity: 2;
+  }
+}
+

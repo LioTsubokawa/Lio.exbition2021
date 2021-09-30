@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>色あてゲーム２</title>
+<link rel="stylesheet" href="style_4a.css">
+</head>
+
+<body>
+	
+	<h1>Q2.色が変わっているのはどれ？</h1>
+	
+	
+	
+	<ol>
+			<div class="container1">
+		
+		
+			<li><span id="box1"></span></li>
+			<li><span id="box2"></span></li>
+			<li><span id="box3"></span></li>
+		
+		
+		　　</div>
+	
+	
+	</ol>
+
+	
+	
+	
+   <div class="container2">
+	
+	 <label class="checkbox">
+		<input type="checkbox">
+        <span class="checkmark"></span>
+		 
+        １
+    </label>
+
+    <label class="checkbox">
+		<input type="checkbox" >
+        <span class="checkmark"></span>
+        ２
+    </label>
+	
+   <label class="checkbox">
+		<input type="checkbox" >
+        <span class="checkmark"></span>
+        ３
+   </label>
+	   
+	  
+	
+  </div>
+	
+	 <button onclick="getValue()">値を取得</button>
+	
+		<script>
+        function getValue() {
+            var checks = document.getElementsByClassName('checks');
+            var str = '';
+
+            for ( i = 0; i < 3; i++) {
+                if ( checks[i].checked === true ) {
+                    str += checks[i].value + " ";
+                }
+            }
+            alert(str);
+        }
+    </script>
+
+	
+</body>
+</html>

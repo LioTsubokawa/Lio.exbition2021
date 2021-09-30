@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>色あてゲーム２</title>
+<link rel="stylesheet" href="style_2a.css">
+</head>
+
+<body>
+	
+	<h1>Q1.色が変わっているのはどれ?</h1>
+	
+	
+	
+	<ol>
+			<div class="container1">
+		
+		
+			<li><span id="box1"></span></li>
+			<li><span id="box2"></span></li>
+			<li><span id="box3"></span></li>
+		
+		
+		　　</div>
+	
+	
+	</ol>
+
+	
+	
+	
+   <div class="container2">
+	
+	 <label class="checkbox" >
+		<input class="checks" type="checkbox" value="1">
+        <span class="checkmark" ></span>
+        １
+    </label>
+
+    <label class="checkbox" >
+		<input  class="checks" type="checkbox" value="2">
+        <span class="checkmark" ></span>
+        ２
+    </label>
+	
+   <label class="checkbox"  >
+		<input class="checks" type="checkbox" value="3" >
+        <span class="checkmark"></span>
+        ３
+   </label>
+	   
+	 <button onclick="getValue()">値を取得</button> 
+	
+  </div>
+
+  <div id="js-popup" class="popup">
+      <div class="popup-contents">不正解です。</div>
+    </div>
+	
+	
+	
+		<script>
+            console.log('konnitiwa');
+        function getValue() {
+            var checks = document.getElementsByClassName('checks');
+            console.log(checks);
+            var str = '';
+
+            for ( i = 0; i < 3; i++) {
+                if ( checks[i].checked === true ) {
+                    str += checks[i].value + " ";
+                }
+            }
+            alert(str);
+            if(str === '1 2 3' ){
+                alert('正解です。')
+                window.location.href = 'index_3a.html'; 
+            }else{
+                alert('不正解です。')
+
+                var popup = document.getElementById('js-popup');
+                popup.classList.add("popup-show")
+            }
+        }
+    </script>
+
+	
+</body>
+</html>
