@@ -8,7 +8,9 @@
 
 <body>
 	
-	<h1>Q1.色が変わっているのはどれ?</h1>
+	<h1>Q1.色が変化しているのはどれ?</h1>
+    <h2>（緑色問題）</h2>
+    <h2>※グラデーションの色は、『色のシュミレーター（アプリ）』を参考にしています。</h2>
 	
 	
 	
@@ -19,6 +21,7 @@
 			<li><span id="box1"></span></li>
 			<li><span id="box2"></span></li>
 			<li><span id="box3"></span></li>
+            <li><span id="box4"></span></li>
 		
 		
 		　　</div>
@@ -48,14 +51,20 @@
         <span class="checkmark"></span>
         ３
    </label>
+   
+   <label class="checkbox"  >
+       <input class="checks" type="checkbox" value="4" >
+       <span class="checkmark"></span>
+       ４
+    </label>
 	   
-	 <button onclick="getValue()">値を取得</button> 
-	
-  </div>
+	</div>
 
-  <div id="js-popup" class="popup">
-      <div class="popup-contents">不正解です。</div>
-    </div>
+    
+
+  <button onclick="getValue()">回答する</button> 
+
+  
 	
 	
 	
@@ -66,20 +75,22 @@
             console.log(checks);
             var str = '';
 
-            for ( i = 0; i < 3; i++) {
+            for ( i = 0; i < 4; i++) {
                 if ( checks[i].checked === true ) {
                     str += checks[i].value + " ";
                 }
             }
             alert(str);
-            if(str === '1 2 3' ){
-                alert('正解です。')
-                window.location.href = 'index_3a.html'; 
+            if(str === '1 2 4 '){
+                window.location.href = 'index_2b.html'; 
+            }else if(str === '1 2 '){
+                window.location.href = 'index_2c.html';
+            }else if(str === '2 4 '){
+                window.location.href = 'index_2d.html';
+            }else if(str === '1 4 '){
+                window.location.href = 'index_2e.html';
             }else{
-                alert('不正解です。')
-
-                var popup = document.getElementById('js-popup');
-                popup.classList.add("popup-show")
+                window.location.href = 'index_2f.html';
             }
         }
     </script>

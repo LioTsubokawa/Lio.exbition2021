@@ -4,8 +4,13 @@
 h1{
 	text-align: center;
 	font-size: 50px;
-	line-height: 30%;
+	line-height: 20%;
 	margin-top: 5%;
+  margin-bottom: 3%;
+}
+h2{
+  line-height: 40%;
+  text-align: center;
 }
 
 
@@ -14,7 +19,7 @@ h1{
 
 .container1{
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-top: 5%;
 	margin-left: 8%;
 	
@@ -33,25 +38,21 @@ h1{
   display:block;
   width:300px;
   height:300px;
-  animation: bgchange1 2.5s ease infinite ;
+  animation: bgchange1 1.5s ease infinite ;
  
 }
 @keyframes bgchange1{
   
   0%{
-	background: #B9BD8C;
+	background: #8c2538;
 	}
-  25% {
-    background: #9C9C84;
-  }
+  
   50% {
-    background: #BFBCBD;
+    background: #79232d;
   }
-  75%{
-	background: #9C9C84;
-  }
+  
   100%{
-	background: #B9BD8C;
+	background: #8c2538;
 	}
  
 }
@@ -60,55 +61,71 @@ h1{
   display:block;
   width:300px;
   height:300px;
-  animation: bgchange2 2.5s ease infinite;
+  animation: bgchange2 1.5s ease infinite;
 }
 @keyframes bgchange2{
-  0% {
-    background: #B9BD8C;
-  }
-  25% {
-    background: #A4944F;
-  }
-  50% {
-    background: #C8B58A;
-  }
-  75% {
-    background: #A4944F;
-  }
-  100% {
-    background: #B9BD8C;
-  }
+  0%{
+    background: #8c2538;
+    }
+    
+    50% {
+      background: #5d492d;
+    }
+    
+    100%{
+    background: #8c2538;
+    }
 }
 
 #box3{
   display:block;
   width:300px;
   height:300px;
-  animation: bgchange3 2.5s ease infinite;
+  animation: bgchange3 1.5s ease infinite;
 }
 @keyframes bgchange3{
-  0% {
-    background: #B9BD8C;
-  }
-  25% {
-    background: #A9995A;
-  }
-  50% {
-    background: #CBB993;
-  }
-  75% {
-    background: #A9995A;
-  }
-  100% {
-    background: #B9BD8C;
-  }
+  0%{
+    background: #8c2538;
+    }
+    
+    50% {
+      background: #473a2d;
+    }
+    
+    100%{
+    background: #8c2538;
+    }
+}
+
+#box4{
+  display:block;
+  width:300px;
+  height:300px;
+  animation: bgchange4 1.5s ease infinite;
+}
+@keyframes bgchange4{
+  0%{
+    background: #8c2538;
+    }
+    
+    50% {
+      background: #8c2538;
+    }
+    
+    100%{
+    background: #8c2538;
+    }
 }
 
  button {
 	 margin-top: 40px;
-	 margin-left: 50%;
+   margin-left: 50%;
+   width: 100px;
+   height: 50px;
         }
+       
 
+      
 .checkbox {
   display: block;
   position: relative;
@@ -162,3 +179,4 @@ h1{
     opacity: 2;
   }
 }
+
