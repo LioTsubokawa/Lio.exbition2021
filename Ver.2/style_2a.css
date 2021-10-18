@@ -4,12 +4,17 @@
 h1{
 	text-align: center;
 	font-size: 50px;
-	line-height: 20%;
-	margin-top: 5%;
+	line-height: 5%;
+	margin-top: 3.5%;
   margin-bottom: 3%;
 }
 
 
+h2{
+
+  text-align: center;
+  line-height: 40%;
+}
 
 
 
@@ -17,7 +22,6 @@ h1{
 	display:flex;
 	justify-content: space-between;
 	margin-top: 3%;
-	margin-left: 4%;
 	
 }
 
@@ -28,11 +32,6 @@ h1{
 	
 }
 
-h2{
-
-  text-align: center;
-  line-height: 40%;
-}
 
 
 
@@ -112,7 +111,7 @@ h2{
 }
 
 .box-outer {
-  width: 25%;
+  width: 22%;
   padding: 0 10px;
 }
 
@@ -140,35 +139,9 @@ h2{
   cursor: pointer;
   user-select: none; /* テキストが選択されてしまうのを防ぐ */
   /* inputは非表示にする */
-  input {
-    display: none;
-  }
+ 
 }
 
-/* □ */
-.checkmark {
-  position: absolute;
-  top: 0; /* 上からの位置 */
-  left: 0;
-  height: 22px; /* 幅 */
-  width: 22px; /* 幅 */
-  border: solid 2px #d4dae2; /* 線 */
-  border-radius: 4px;
-  box-sizing: border-box;
-  /* ✓ */
-  &:after {
-    content: "";
-    position: absolute;
-    border: solid #FFF;
-    border-width: 0 2px 2px 0;
-    left: 5px;
-    top: 1px;
-    width: 6px;
-    height: 10px;
-    transform: rotate(45deg);
-    opacity: 0; /* 透明にしておく */
-  }
-}
 
 
 
