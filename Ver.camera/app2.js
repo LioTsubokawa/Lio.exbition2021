@@ -1,3 +1,4 @@
+(function () {
 const cameraSize = { w: 360, h: 240 };
 const canvasSize = { w: 360, h: 240 };
 const resolution = { w: 1080, h: 720 };
@@ -14,7 +15,7 @@ video.id       = 'video';
 video.width    = cameraSize.w;
 video.height   = cameraSize.h;
 video.autoplay = true;
-document.getElementById('videoPreview1').appendChild(video);
+document.getElementById('videoPreview1');
 
 
 
@@ -52,14 +53,14 @@ function _canvasUpdate() {
   var gray = (imgd[i*4] + imgd[i*4+1] + imgd[i*4+2])/3;
   /*var gray = parseInt(imgd[i*4]*0.3 + imgd[i*4+1]*0.59 + imgd[i*4+2]*0.11);という方法も*/
   imgd[i*4] = gray;
-  imgd[i*4+1] = gray;
+  imgd[i*4+1] = 200;
   imgd[i*4+2] = gray;
   imgd[i*4+3] = 255;
   }
   // 変更した内容をcanvasの右側に戻す
   canvasCtx.putImageData(imageData, 0, 0);
 
-  
+
  // _changePixelColor(); // ループにこれが追加される
   requestAnimationFrame(_canvasUpdate);
 };
@@ -102,4 +103,5 @@ function _checkTargetColor(current, min, max) {
   if(min.g > current.g || current.g > max.g) return;
   if(min.b > current.b || current.b > max.b) return;
   return true;
-};
+}; 
+})(); 
