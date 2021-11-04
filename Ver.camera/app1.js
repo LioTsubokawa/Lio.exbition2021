@@ -1,6 +1,6 @@
 (function () {
-const cameraSize = { w: 360, h: 240 };
-const canvasSize = { w: 360, h: 240 };
+const cameraSize = { w: 150, h: 220 };
+const canvasSize = { w: 150, h: 220 };
 const resolution = { w: 1080, h: 720 };
 const minColor   = { r: 108, g: 0, b: 0 };
 const maxColor   = { r: 255, g: 60, b: 60 };
@@ -35,7 +35,7 @@ canvas        = document.createElement('canvas');
 canvas.id     = 'canvas';
 canvas.width  = canvasSize.w;
 canvas.height = canvasSize.h;
-document.getElementById('canvasPreview').appendChild(canvas);
+document.getElementById('canvasPreview1').appendChild(canvas);
 
 // コンテキストを取得する
 canvasCtx = canvas.getContext('2d');
