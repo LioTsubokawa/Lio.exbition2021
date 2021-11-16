@@ -50,11 +50,11 @@ function _canvasUpdate() {
   var imgd = imageData.data;
   var len = imgd.length/4;
   for (var i = 0; i < len; ++i) {
-  var gray = (imgd[i*4] + imgd[i*4+1] + imgd[i*4+2])/3;
+    var gray = parseInt(imgd[i*4]*0.3 + imgd[i*4+1]*0.59 + imgd[i*4+2]*0.11);
   /*var gray = parseInt(imgd[i*4]*0.3 + imgd[i*4+1]*0.59 + imgd[i*4+2]*0.11);という方法も*/
-  imgd[i*4] = gray;
-  imgd[i*4+1] = 200;
-  imgd[i*4+2] = gray;
+  imgd[i*4] =imgd[i*4]*0.8;
+  imgd[i*4+1] = imgd[i*4+1]*0.96;
+  imgd[i*4+2] =  imgd[i*4+2]*0.95;
   imgd[i*4+3] = 255;
   }
   // 変更した内容をcanvasの右側に戻す
