@@ -67,7 +67,6 @@ function _canvasUpdate() {
   imgd[i*4+2]= r*-0.003882 + g*-0.048116 + b*1.051998, + a*0 + 0
   imgd[i*4+3]= r*0         + g*0         + b*0         + a*1 + 0
   */
-
  
   /*imgd[i*4] =imgd[i*4]*1.0;
   imgd[i*4+1] = imgd[i*4+1]*0;
@@ -76,7 +75,6 @@ function _canvasUpdate() {
   }
   // 変更した内容をcanvasの右側に戻す
   canvasCtx.putImageData(imageData, 0, 0);
-
 
  // _changePixelColor(); // ループにこれが追加される
   requestAnimationFrame(_canvasUpdate);
