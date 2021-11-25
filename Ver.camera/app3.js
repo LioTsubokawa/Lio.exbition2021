@@ -42,7 +42,7 @@ canvasCtx = canvas.getContext('2d');
 
 
 // video要素の映像をcanvasに描画する
-/*_canvasUpdate();
+_canvasUpdate();
 
 function _canvasUpdate() {
   canvasCtx.drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -52,7 +52,7 @@ function _canvasUpdate() {
   for (var i = 0; i < len; ++i) {
   var gray = parseInt(imgd[i*4]*0.3 + imgd[i*4+1]*0.59 + imgd[i*4+2]*0.11);
   /*var gray = parseInt(imgd[i*4]*0.3 + imgd[i*4+1]*0.59 + imgd[i*4+2]*0.11);という方法も*/
-  /*r=imgd[i*4]
+  r=imgd[i*4]
   g=imgd[i*4+1]
   b=imgd[i*4+2]
   a=imgd[i*4+3]
@@ -66,14 +66,14 @@ function _canvasUpdate() {
   imgd[i*4+2]= r*-0.003882 + g*-0.048116 + b*1.051998, + a*0 + 0
   imgd[i*4+3]= r*0         + g*0         + b*0         + a*1 + 0
   */
-
+ 
   /*imgd[i*4] =imgd[i*4]*1.0;
   imgd[i*4+1] = imgd[i*4+1]*1.0;
   imgd[i*4+2] =  imgd[i*4+2]*0;
   imgd[i*4+3] = 255;*/
   }
   // 変更した内容をcanvasの右側に戻す
-  /*canvasCtx.putImageData(imageData, 0, 0);
+  canvasCtx.putImageData(imageData, 0, 0);
 
 
  // _changePixelColor(); // ループにこれが追加される
