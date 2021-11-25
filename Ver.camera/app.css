@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
