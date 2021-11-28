@@ -120,3 +120,6 @@ function _checkTargetColor(current, min, max) {
   return true;
 }; 
 })(); 
+
+
+
