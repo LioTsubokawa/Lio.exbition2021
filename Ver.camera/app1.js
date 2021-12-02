@@ -117,7 +117,7 @@ function _checkTargetColor(current, min, max) {
   if(min.g > current.g || current.g > max.g) return;
   if(min.b > current.b || current.b > max.b) return;
   return true;
-}; */
+}; 
 })(); 
 
 
