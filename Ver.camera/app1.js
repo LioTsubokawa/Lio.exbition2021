@@ -67,7 +67,7 @@ function _canvasUpdate() {
   imgd[i*4+1] = imgd[i*4+1]*1.0;
   imgd[i*4+2] =  imgd[i*4+2]*1.0;
   imgd[i*4+3] = 255; */
-  }
+  /*}
   // 変更した内容をcanvasの右側に戻す
   /*canvasCtx.putImageData(imageData, 0, 0);
 
