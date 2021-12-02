@@ -25,10 +25,7 @@ document.getElementById('videoPreview1');
 media = navigator.mediaDevices.getUserMedia({
   audio: false,
   video: true,
-  video: {
-    width: { ideal: resolution.w },
-    height: { ideal: resolution.h }
-  }
+  
 }).then(function(stream) {
   video.srcObject = stream;
 });
