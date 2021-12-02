@@ -1,6 +1,6 @@
 (function () {
-const cameraSize = { w: 150, h: 220 };
-const canvasSize = { w: 150, h: 220 };
+const cameraSize = { w: 120, h: 190 };
+const canvasSize = { w: 120, h: 190 };
 const resolution = { w: 1080, h: 720 };
 const minColor   = { r: 108, g: 0, b: 0 };
 const maxColor   = { r: 255, g: 60, b: 60 };
