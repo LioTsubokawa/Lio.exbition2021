@@ -22,10 +22,10 @@ document.getElementById('videoPreview1').appendChild(video);
 // video要素にWebカメラの映像を表示させる
 media = navigator.mediaDevices.getUserMedia({
   audio: false,
-  video: {
+  /*video: {
     width: { ideal: resolution.w },
     height: { ideal: resolution.h }
-  }
+  }*/
 }).then(function(stream) {
   video.srcObject = stream;
 });
