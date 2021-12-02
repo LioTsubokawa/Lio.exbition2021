@@ -31,7 +31,7 @@ media = navigator.mediaDevices.getUserMedia({
 });
 
 
-// canvas要素をつくる
+/*// canvas要素をつくる
 canvas        = document.createElement('canvas');
 canvas.id     = 'canvas';
 canvas.width  = canvasSize.w;
@@ -53,7 +53,7 @@ function _canvasUpdate() {
   for (var i = 0; i < len; ++i) {
   var gray = (imgd[i*4] + imgd[i*4+1] + imgd[i*4+2])/3;
   /*var gray = parseInt(imgd[i*4]*0.3 + imgd[i*4+1]*0.59 + imgd[i*4+2]*0.11);という方法も*/
-  r=imgd[i*4]
+  /*r=imgd[i*4]
   g=imgd[i*4+1]
   b=imgd[i*4+2]
   a=imgd[i*4+3]
@@ -69,7 +69,7 @@ function _canvasUpdate() {
   imgd[i*4+3] = 255; */
   }
   // 変更した内容をcanvasの右側に戻す
-  canvasCtx.putImageData(imageData, 0, 0);
+  /*canvasCtx.putImageData(imageData, 0, 0);
 
 
  // _changePixelColor(); // ループにこれが追加される
@@ -114,7 +114,7 @@ function _checkTargetColor(current, min, max) {
   if(min.g > current.g || current.g > max.g) return;
   if(min.b > current.b || current.b > max.b) return;
   return true;
-}; 
+}; */
 })(); 
 
 
