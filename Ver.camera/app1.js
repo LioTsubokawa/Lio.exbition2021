@@ -15,6 +15,8 @@ video.id       = 'video';
 video.width    = cameraSize.w;
 video.height   = cameraSize.h;
 video.autoplay = true;
+video.muted=true;/*消音にする*/
+video.playsInline=true;/*自動でプレイヤーに切り替えないようにする*/
 document.getElementById('videoPreview1').appendChild(video);
 
 
