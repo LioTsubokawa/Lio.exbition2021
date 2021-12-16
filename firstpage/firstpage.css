@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url(background_L.png),url(background_R.png);
+	background-repeat:repeat-y;
+	background-size: 14.5%;
+	background-position: 5% top, 95% top;
+}
+
+
+
+
+h1{
+	text-align: center;
+}
+
+h2{
+	margin-left: 23%;
+}
+
+p{
+	margin-left: 23%;
+}
+
+
+
+
+.botan{
+	display: flex;
+	justify-content:space-evenly;
+	text-align: center;
+	margin-top: 2%;
+	
+}
+
