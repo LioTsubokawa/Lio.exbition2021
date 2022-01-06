@@ -2,6 +2,14 @@
 /* CSS Document */
 
 
+body{
+	background-image: url(background_L.png),url(background_R.png);
+	background-repeat:repeat-y;
+	background-size: 14.5%;
+	background-position: 2.5% top, 97.5% top;
+}
+
+
 video{
 	width: 45%;
 	height: 45%;
