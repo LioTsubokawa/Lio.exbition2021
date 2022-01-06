@@ -10,6 +10,13 @@ body{
 
 
 
+.title{
+	margin-top: 2.5%;
+	text-align: center;
+}
+
+
+
 
 h1{
 	text-align: center;
@@ -20,7 +27,7 @@ h2{
 }
 
 p{
-	margin-left: 23%;
+	margin-left: 25%;
 }
 
 
