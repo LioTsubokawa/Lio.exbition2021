@@ -5,19 +5,14 @@
 
 .answer{
 	text-align: center;
-	font-size: 35px;
-    line-height: 100%;
+    margin-top: 2%;
 }
 
-h1{
+
+.sentense{ 
+    margin-top: 2.5%;
     text-align: center;
-    margin-top: 2%;
-    line-height: 30%;
-    font-size: 35px;
-}
-.text{
-    margin-top: 3%;
-}
+  }
 
 .container{
     display: flex;

@@ -1,20 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-h1{
+.question{
 	text-align: center;
 	font-size: 50px;
 	line-height: 5%;
-	margin-top: 3.5%;
-  margin-bottom: 3%;
+	margin-top: 2.5%;
 }
 
 
-h2{
-
+.sentense{ 
   text-align: center;
-  line-height: 40%;
-  font-size: 200%;
 }
 
 
@@ -24,18 +20,15 @@ h2{
 .container1{
 	display:flex;
 	justify-content: space-between;
-	margin-top: 5%;
-	
-	
+	margin-top: 3%;
 }
 
 .container2{
 	display:flex;
 	justify-content: space-around;
-	margin-top: 5%;
+	margin-top: 2%;
 	
 }
-
 
 
 #box1{
@@ -124,12 +117,12 @@ h2{
   height:300px;
 }
 
- button {
-	 margin-top: 40px;
-   margin-left: 50%;
-   width: 100px;
-   height: 50px;
-        }
+button {
+  margin-left: 48%;
+  margin-top: 40px;
+  width: 100px;
+  height: 50px;
+       }
        
 
       

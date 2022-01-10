@@ -3,29 +3,16 @@
 
 .answer{
 	text-align: center;
-	font-size: 35px;
-    line-height: 100%;
-}
-
-h1{
-    text-align: center;
     margin-top: 2%;
-    line-height: 30%;
-    font-size: 35px;
 }
 
-.text{
-    margin-top: 3%;
-}
 
-p{
+.sentense{ 
+    margin-top: 2.5%;
     text-align: center;
-    margin-top: 1.5%;
-    line-height: 30%;
-    font-size: 20px;
-    font-weight: bold;
-}
+  }
 
+  
 .choice{
 
     background-color:rgb(223, 223, 124);
@@ -40,6 +27,6 @@ p{
 table{
     width: 500px;
     height: 250px;
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 36%;
 }
