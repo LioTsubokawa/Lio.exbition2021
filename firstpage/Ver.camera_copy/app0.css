@@ -12,7 +12,12 @@ body{
 .title{
 
     text-align: center;
-    margin-top: 2.5%;
+    margin-top: 2%;
+}
+
+.title2{
+    margin-top: 1%;
+    text-align: center;
 }
 .QR{
 
