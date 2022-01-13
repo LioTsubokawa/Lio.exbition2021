@@ -17,7 +17,7 @@ video.height   = cameraSize.h;
 video.autoplay = true;
 video.mutd=true;/*消音にする*/
 video.playsInline=true;/*自動でプレイヤーに切り替えないようにする*/
-//document.getElementById('videoPreview1').appendChild(video);
+document.getElementById('videoPreview1').appendChild(video);
 
 
 
