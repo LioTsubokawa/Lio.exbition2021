@@ -45,7 +45,7 @@ canvasCtx = canvas.getContext('2d');
 
 
 // video要素の映像をcanvasに描画する
-_canvasUpdate();
+//_canvasUpdate();
 
 function _canvasUpdate() {
   canvasCtx.drawImage(video, 0, 0, canvas.width, canvas.height);
