@@ -16,20 +16,27 @@ body{
 }
 
 .title2{
-    margin-top: 1%;
+    margin-top: 0.5%;
     text-align: center;
 }
 .QR{
-
+    margin-top: 2%;
     text-align: center;
 }
 
 .QR_s{
+    margin-top: 0.5%;
     text-align: center;
 }
 
 .yomitori{
 
+    margin-top: 0.5%;
+    text-align: center;
+}
+
+
+.PCver{
     margin-top: 2.5%;
     text-align: center;
 }
