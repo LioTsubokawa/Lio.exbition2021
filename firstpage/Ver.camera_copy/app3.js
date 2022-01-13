@@ -33,14 +33,22 @@ media = navigator.mediaDevices.getUserMedia({
   video.srcObject = stream;
 });
 
+canvas2_2=document.createElement("canvas");
+canvas2_2.id = "canvas";
+canvas2_2.width = canvasSize.w;
+canvas2_2.height = canvasSize.h;
+
 // canvas要素をつくる
 canvas        = document.createElement('canvas');
 canvas.id     = 'canvas';
 canvas.width  = canvasSize.w;
 canvas.height = canvasSize.h;
+
+document.getElementById('canvasPreview2').appendChild(canvas2_2);
 document.getElementById('canvasPreview3').appendChild(canvas);
 
 // コンテキストを取得する
+canvas2_2Ctx = canvas2_2.getContext("2d");
 canvasCtx = canvas.getContext('2d');
 
 
@@ -49,6 +57,10 @@ _canvasUpdate();
 
 function _canvasUpdate() {
   canvasCtx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+  var imageData2_2 = canvasCtx.getImageData(0,0,canvasSize.w,canvasSize.h);
+  var imgd2_2 = imageData2_2.data;
+
   var imageData = canvasCtx.getImageData(0,0,canvasSize.w,canvasSize.h)
   var imgd = imageData.data;
   var len = imgd.length/4;
@@ -59,10 +71,16 @@ function _canvasUpdate() {
   g=imgd[i*4+1]
   b=imgd[i*4+2]
   a=imgd[i*4+3]
-  imgd[i*4]= r*1.255528  + g*-0.076749  + b*-0.178779, + a*0 + 0
-  imgd[i*4+1]= r*-0.078411 + g* 0.930809+ b*0.147602, + a*0 + 0
+  imgd[i*4]= r*1.255528  + g*-0.076749  + b*-0.178779 + a*0 + 0
+  imgd[i*4+1]= r*-0.078411 + g* 0.930809+ b*0.147602 + a*0 + 0
   imgd[i*4+2]=  r*0.004733  + g*0.691367  + b*0.303900 + a*0 + 0
   imgd[i*4+3]= r*0         + g*0         + b*0         + a*1 + 0
+
+
+  imgd2_2[i*4]= r*0.367322 + g*0.860646 + b*-0.227968 + a*0 + 0
+  imgd2_2[i*4+1]= r*0.280085  + g*0.672501  + b*0.047413 + a*0 + 0
+  imgd2_2[i*4+2]= r*-0.011820  + g*0.042940  + b*0.968881 + a*0 + 0
+  imgd2_2[i*4+3]= r*0         + g*0         + b*0         + a*1 + 0
 
   /*imgd[i*4]= r*0.152286  + g*1.052583  + b*-0.204868 + a*0 + 0
   imgd[i*4+1]= r*0.114503  + g*0.786281  + b*0.099216, + a*0 + 0
@@ -75,6 +93,8 @@ function _canvasUpdate() {
   imgd[i*4+2] =  imgd[i*4+2]*0;
   imgd[i*4+3] = 255;*/
   }
+
+  canvas2_2Ctx.putImageData(imageData2_2,0,0);
   // 変更した内容をcanvasの右側に戻す
   canvasCtx.putImageData(imageData, 0, 0);
 
