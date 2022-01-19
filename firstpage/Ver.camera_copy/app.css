@@ -2,6 +2,7 @@
 /* CSS Document */
 
 .container1{
+    margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -9,6 +10,7 @@
 
 
 .container2{
+    margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
