@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-image: url(background_L.png),url(background_R.png);
+	background-repeat:repeat-y;
+	background-size: 14.5%;
+	background-position: 2.5% top, 97.5% top;
+}
+
+.title{
+
+    text-align: center;
+    margin-top: 2%;
+}
+
+.title2{
+    margin-top: 0.5%;
+    text-align: center;
+}
+.QR{
+    margin-top: 1%;
+    text-align: center;
+}
+
+.QR_s{
+    margin-top: 0.5%;
+    text-align: center;
+}
+
+.yomitori{
+
+    margin-top: 1%;
+    text-align: center;
+}
+
+
+.PCver{
+    margin-top: 2%;
+    text-align: center;
+}
